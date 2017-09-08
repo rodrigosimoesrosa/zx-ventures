@@ -1,0 +1,80 @@
+{
+  "allCategory": [
+    {
+      "id": "153",
+      "title": "Balas & Doces"
+    },
+    {
+      "id": "154",
+      "title": "Calderetas"
+    },
+    {
+      "id": "155",
+      "title": "Cervejas"
+    },
+    {
+      "id": "156",
+      "title": "Cervejas Especiais & Importadas"
+    },
+    {
+      "id": "157",
+      "title": "Cervejas retornáveis"
+    },
+    {
+      "id": "158",
+      "title": "Cervejas Retornáveis."
+    },
+    {
+      "id": "159",
+      "title": "Champagnes"
+    },
+    {
+      "id": "160",
+      "title": "Destaques & Promoções"
+    },
+    {
+      "id": "161",
+      "title": "Kits & Promoções"
+    },
+    {
+      "id": "162",
+      "title": "Licores & outras bebidas"
+    },
+    {
+      "id": "163",
+      "title": "Não Alcóolicos"
+    },
+    {
+      "id": "164",
+      "title": "Para festas & churrascos"
+    },
+    {
+      "id": "165",
+      "title": "Para matar a fome"
+    },
+    {
+      "id": "166",
+      "title": "Refrigerantes"
+    },
+    {
+      "id": "167",
+      "title": "Tabacaria"
+    },
+    {
+      "id": "168",
+      "title": "Vinhos"
+    },
+    {
+      "id": "169",
+      "title": "Vodkas"
+    },
+    {
+      "id": "170",
+      "title": "Whiskys"
+    },
+    {
+      "id": "171",
+      "title": "Kit"
+    }
+  ]
+}

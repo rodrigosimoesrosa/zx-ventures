@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:paddingStart="@dimen/auto_complete_item"
+    android:paddingEnd="@dimen/auto_complete_item">
+
+    <TextView
+        style="@style/AutoCompleteText1"
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_complete_item_text1"/>
+
+    <TextView
+        style="@style/AutoCompleteText2"
+        android:id="@android:id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

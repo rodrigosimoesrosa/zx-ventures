@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">zxapp</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Google geo api key-->
+    <string name="google_geo_api_key">AIzaSyCch391WHftIFDyRGOzPqzoTV_HtQwAfpA</string>
+
+    <!--Splash-->
+    <string name="zx_ventures_description">Zx Ventures</string>
+
+    <!--Screen Titles-->
+    <string name="home_title">Delivery address</string>
+
+    <!--Home-->
+    <string name="address_fragment">Address</string>
+    <string name="address_title">Where are you?</string>
+    <string name="address_info">I will use your address to find the fastest\ndelivery option available in your area.</string>
+    <string name="address_hint">Write your address</string>
+    <string name="address_location_item_description">Location icon from address item</string>
+    <string name="home_button_close_description">Button which is responsible to clean field and list of address</string>
+    <string name="category_all">All</string>
+
+    <!--ProductList-->
+    <string name="product_section_fragment">Product Category</string>
+    <string name="product_list_welcome_msg">"Hey "</string>
+    <string name="product_list_info">"We've sure that you will find a product of your choice, don't waste time, check the other categories."</string>
+    <string name="product_list_image_item_description">Image from product list</string>
+
+    <!--ProductDetail-->
+    <string name="product_detail_title">Product detail</string>
+    <string name="product_detail_description">Image of product inside detail</string>
+    <string name="description">Description</string>
+    <string name="product_detail_without_description">This product haven\'t description</string>
+
+    <!--Errors-->
+    <string name="no_internet_connection">No internet connection</string>
+
+    <string name="address_connect_api_failed">Could not connect to Google API Client</string>
+    <string name="address_contacting_api_failed">Could not contact to Google API Client</string>
+    <string name="generic_error">A general error occurred</string>
+    <string name="product_list_empty_data">"We're sorry, but was not found any product!"</string>
+    <string name="category_empty_data">"We're sorry, but was not found any category for this shop!"</string>
+    <string name="home_empty_data">"We're sorry, but was not found any point of contact for this address!"</string>
+    <string name="problem_connection">Has occurred problem with connection</string>
+
+    <!--Info-->
+    <string name="category_all_id">0</string>
+    <string name="nearest">NEAREST</string>
+    <string name="available">Available</string>
+    <string name="closed">Closed</string>
+</resources>

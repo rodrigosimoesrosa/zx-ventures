@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="address_padding">16dp</dimen>
+
+    <!--ProductItem-->
+    <dimen name="product_item_width">150dp</dimen>
+    <dimen name="product_item_height">216dp</dimen>
+    <dimen name="product_item_img_width">100dp</dimen>
+    <dimen name="product_item_img_height">120dp</dimen>
+
+    <!--Autocomplete-->
+    <dimen name="auto_complete_item">4dp</dimen>
+    <dimen name="auto_complete_item_text1">6dp</dimen>
+</resources>
