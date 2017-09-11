@@ -9,10 +9,11 @@ import com.zxventures.zxapp.base.BaseActivity
 abstract class BaseMVPActivity<in V : BaseMVPView, P : BaseMVPPresenter<V>>
     : BaseActivity(), BaseMVPView {
 
-    protected abstract var presenter: P
+    abstract var presenter: P
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         presenter.attachView(this as V)
     }
 

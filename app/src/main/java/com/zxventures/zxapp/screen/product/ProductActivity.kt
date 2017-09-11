@@ -12,6 +12,8 @@ import com.zxventures.zxapp.base.mvp.BaseMVPActivity
 import com.zxventures.zxapp.extensions.isNetworkConnected
 import com.zxventures.zxapp.model.Category
 import com.zxventures.zxapp.model.PointOfContactData
+import com.zxventures.zxapp.presenter.product.contract.ProductContract
+import com.zxventures.zxapp.presenter.product.impl.ProductCategoryPresenterImpl
 import com.zxventures.zxapp.screen.product.list.adapter.ProductAdapter
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.product_content.*
@@ -22,9 +24,9 @@ import kotlinx.android.synthetic.main.product_content.*
 class ProductActivity : BaseMVPActivity<ProductContract.ProductCategoryView, ProductContract.ProductCategoryPresenter>(),
         ProductContract.ProductCategoryView {
 
-    override fun getLayout(): Int = R.layout.activity_product
+    override var presenter: ProductContract.ProductCategoryPresenter = ProductCategoryPresenterImpl()
 
-    override var presenter: ProductContract.ProductCategoryPresenter = ProductContract.ProductCategoryPresenterImpl()
+    override fun getLayout(): Int = R.layout.activity_product
 
     private var adapterProduct: ProductAdapter? = null
     private val ANIMATION_DURATION = 300L

@@ -1,4 +1,4 @@
-package com.zxventures.zxapp.mockup;
+package com.zxventures.zxapp.presenter.product.impl
 
 import CategorysQuery
 import br.com.mirabilis.util.io.GsonUtil
@@ -6,13 +6,14 @@ import com.zxventures.zxapp.R
 import com.zxventures.zxapp.ZxVenturesApp
 import com.zxventures.zxapp.base.mvp.BaseMVPPresenterImpl
 import com.zxventures.zxapp.model.Category
-import com.zxventures.zxapp.screen.product.ProductContract
+import com.zxventures.zxapp.presenter.product.contract.ProductContract
 import java.io.Serializable
+import java.util.*
 
 /**
  * Created by rodrigosimoesrosa
  */
-class ProductCategoryPresenterImplMockup : BaseMVPPresenterImpl<ProductContract.ProductCategoryView>(),
+class ProductCategoryPresenterImpl : BaseMVPPresenterImpl<ProductContract.ProductCategoryView>(),
         ProductContract.ProductCategoryPresenter {
 
     val instance = ZxVenturesApp.instance
@@ -31,5 +32,5 @@ class ProductCategoryPresenterImplMockup : BaseMVPPresenterImpl<ProductContract.
 
     override fun cancel() {}
 
-    data class CategoryMockup(val allCategory:ArrayList<CategorysQuery.AllCategory>): Serializable
+    data class CategoryMockup(val allCategory: ArrayList<CategorysQuery.AllCategory>): Serializable
 }

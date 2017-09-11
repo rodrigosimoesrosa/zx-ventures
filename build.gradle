@@ -1,6 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+
     ext.kotlin_version = '1.1.4-3'
     repositories {
         google()
@@ -24,5 +25,13 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+task runUnitTests(dependsOn: [':app:testDebugUnitTest']) {
+    description 'Run all unit tests'
+}
+
+task runAcceptanceTests(dependsOn: [':app:connectedAndroidTest']) {
+    description 'Run all acceptance tests.'
 }
 

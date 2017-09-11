@@ -16,8 +16,9 @@ import com.zxventures.zxapp.extensions.isNetworkConnected
 import com.zxventures.zxapp.model.Category
 import com.zxventures.zxapp.model.PointOfContactData
 import com.zxventures.zxapp.model.Product
+import com.zxventures.zxapp.presenter.product.contract.ProductContract
+import com.zxventures.zxapp.presenter.product.impl.ProductListPresenterImpl
 import com.zxventures.zxapp.screen.product.ProductActivity
-import com.zxventures.zxapp.screen.product.ProductContract
 import com.zxventures.zxapp.screen.product.detail.ProductDetailActivity
 import com.zxventures.zxapp.screen.product.list.adapter.ProductListAdapter
 import kotlinx.android.synthetic.main.fragment_product_list.*
@@ -27,6 +28,8 @@ import kotlinx.android.synthetic.main.fragment_product_list.*
  */
 class ProductListFragment : BaseMVPFragment<ProductContract.ProductListView,
         ProductContract.ProductListPresenter>(), ProductContract.ProductListView {
+
+    override var presenter: ProductContract.ProductListPresenter = ProductListPresenterImpl()
 
     companion object {
 
@@ -47,8 +50,6 @@ class ProductListFragment : BaseMVPFragment<ProductContract.ProductListView,
     private var category: Category? = null
     private var pointOfContact: PointOfContactData.PointOfContact? = null
     private var adapter: ProductListAdapter? = null
-
-    override var presenter: ProductContract.ProductListPresenter = ProductContract.ProductListPresenterImpl()
 
     override fun getLayout(): Int = R.layout.fragment_product_list
 

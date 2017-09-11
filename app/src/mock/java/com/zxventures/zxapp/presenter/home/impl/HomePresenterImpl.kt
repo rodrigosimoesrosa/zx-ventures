@@ -1,17 +1,18 @@
-package com.zxventures.zxapp.mockup
+package com.zxventures.zxapp.presenter.home.impl
 
 import br.com.mirabilis.util.io.GsonUtil
 import com.zxventures.zxapp.R
 import com.zxventures.zxapp.ZxVenturesApp
 import com.zxventures.zxapp.base.mvp.BaseMVPPresenterImpl
 import com.zxventures.zxapp.model.PointOfContactData
-import com.zxventures.zxapp.screen.home.HomeContract
+import com.zxventures.zxapp.presenter.home.contract.HomeContract
 import java.io.Serializable
+import java.util.*
 
 /**
  * Created by rodrigosimoesrosa
  */
-class HomePresenterImplMockup : BaseMVPPresenterImpl<HomeContract.HomeView>(),
+class HomePresenterImpl : BaseMVPPresenterImpl<HomeContract.HomeView>(),
         HomeContract.HomePresenter {
 
     val instance = ZxVenturesApp.instance

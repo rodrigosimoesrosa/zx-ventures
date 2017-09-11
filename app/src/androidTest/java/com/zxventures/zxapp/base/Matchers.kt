@@ -9,11 +9,22 @@ import android.support.test.espresso.assertion.ViewAssertions.matches
 import android.support.test.espresso.intent.Intents.intended
 import android.support.test.espresso.intent.matcher.IntentMatchers
 import android.support.test.espresso.matcher.ViewMatchers.*
+import com.zxventures.zxapp.base.matchers.RecyclerViewMatcher.Companion.atPosition
+import com.zxventures.zxapp.base.matchers.RecyclerViewMatcher.Companion.haveItems
+import org.hamcrest.Matchers
 
 class Matchers {
 
-    fun viewExist(@IdRes viewId:Int){
+    fun viewExist(@IdRes viewId: Int){
         onView(withId(viewId)).check(doesNotExist())
+    }
+
+    fun <T> recyclerViewPosition(@IdRes viewId: Int, position:Int, viewHolderClass: Class<T>){
+        onView(withId(viewId)).check(matches(atPosition(position, Matchers.instanceOf(viewHolderClass))))
+    }
+
+    fun <T> recyclerViewHaveItems(@IdRes viewId: Int, amount: Int, viewHolderClass: Class<T>){
+        onView(withId(viewId)).check(matches(haveItems(amount, Matchers.instanceOf(viewHolderClass))))
     }
 
     fun <T:Activity> nextActivityWhichWillOpenIs(clazz: Class<T>) {

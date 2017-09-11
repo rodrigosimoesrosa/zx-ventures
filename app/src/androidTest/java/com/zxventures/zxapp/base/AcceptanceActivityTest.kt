@@ -5,6 +5,7 @@ import android.support.test.filters.LargeTest
 import android.support.test.rule.ActivityTestRule
 import android.support.test.runner.AndroidJUnit4
 import com.zxventures.zxapp.Matchers
+import org.junit.Before
 import org.junit.Rule
 import org.junit.runner.RunWith
 
@@ -17,12 +18,16 @@ abstract class AcceptanceActivityTest<T : Activity>(clazz: Class<T>) {
 
     @Rule
     @JvmField
-    val activityRule: ActivityTestRule<T> = ActivityTestRule(clazz)
+    val activityRule: ActivityTestRule<T> = buildRule(clazz)
 
-    @Rule
-    @JvmField
-    val intentRule: ActivityTestRule<T> = ActivityTestRule(clazz)
+    abstract fun buildRule(clazz: Class<T>) : ActivityTestRule<T>
 
+    @Before
+    fun setActivity() {
+        activity = activityRule.activity
+    }
+
+    var activity : T? = null
     val check: Matchers = Matchers()
     val event: Events = Events()
 }

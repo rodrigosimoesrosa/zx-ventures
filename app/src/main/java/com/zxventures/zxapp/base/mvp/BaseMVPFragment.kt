@@ -9,7 +9,7 @@ import com.zxventures.zxapp.base.BaseFragment
 abstract class BaseMVPFragment<in V : BaseMVPView, P : BaseMVPPresenter<V>>
     : BaseFragment(), BaseMVPView {
 
-    protected abstract var presenter: P
+    abstract var presenter: P
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

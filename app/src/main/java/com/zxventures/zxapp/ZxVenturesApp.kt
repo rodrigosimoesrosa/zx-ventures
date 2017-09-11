@@ -9,6 +9,7 @@ import com.zxventures.zxapp.extensions.Delegate
 class ZxVenturesApp : Application() {
 
     companion object {
+
         var instance: ZxVenturesApp by Delegate.notNullValue()
         val name = "Rodrigo"
     }

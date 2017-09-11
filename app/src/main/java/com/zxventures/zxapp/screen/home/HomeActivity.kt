@@ -17,11 +17,14 @@ import com.zxventures.zxapp.extensions.afterTextChanged
 import com.zxventures.zxapp.extensions.hideKeyboard
 import com.zxventures.zxapp.extensions.isNetworkConnected
 import com.zxventures.zxapp.model.PointOfContactData
+import com.zxventures.zxapp.presenter.home.contract.HomeContract
+import com.zxventures.zxapp.presenter.home.impl.HomePresenterImpl
 import com.zxventures.zxapp.screen.home.adapter.AddressAutoCompleteAdapter
 import com.zxventures.zxapp.screen.home.adapter.PointOfContactAdapter
 import com.zxventures.zxapp.screen.product.ProductActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.home_content.*
+import java.util.*
 
 /**
  * Created by rodrigosimoesrosa
@@ -29,11 +32,11 @@ import kotlinx.android.synthetic.main.home_content.*
 class HomeActivity : BaseMVPActivity<HomeContract.HomeView, HomeContract.HomePresenter>(),
         GoogleApiClient.OnConnectionFailedListener, HomeContract.HomeView {
 
+    override var presenter: HomeContract.HomePresenter = HomePresenterImpl()
+
     private val RECYCLER_STATE = "RECYCLER_STATE"
 
     override fun getLayout(): Int = R.layout.activity_home
-
-    override var presenter: HomeContract.HomePresenter = HomeContract.HomePresenterImpl()
 
     private val pointsOfContact: MutableList<PointOfContactData.PointOfContact> = mutableListOf()
 

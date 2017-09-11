@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">zxapp</string>
-
     <string name="ok">OK</string>
     <string name="cancel">Cancelar</string>
 
