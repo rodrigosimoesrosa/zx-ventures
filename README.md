@@ -10,7 +10,7 @@ To run this project, you should have installed:
 Basic Unit Test and Instrumented.
 
 ./gradlew test
-./gradlew connectedAndroidTest
+./gradlew connectedProductionDebugAndroidTest
 
 I would like to implement more test, but unfortunately I couldn't
 
@@ -24,7 +24,7 @@ Was used to connect on api, this library is recommended by GraphQL
 
 https://github.com/apollographql/apollo-android
 
-## Expresso
+## Espresso
 Was used for instrumented test
 
 https://developer.android.com/training/testing/espresso/index.html
