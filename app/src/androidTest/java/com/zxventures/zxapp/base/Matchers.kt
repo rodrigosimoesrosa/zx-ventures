@@ -19,6 +19,10 @@ class Matchers {
         onView(withId(viewId)).check(doesNotExist())
     }
 
+    fun viewDisplayed(@IdRes viewId: Int){
+        onView(withId(viewId)).check(matches(isDisplayed()))
+    }
+
     fun <T> recyclerViewPosition(@IdRes viewId: Int, position:Int, viewHolderClass: Class<T>){
         onView(withId(viewId)).check(matches(atPosition(position, Matchers.instanceOf(viewHolderClass))))
     }
