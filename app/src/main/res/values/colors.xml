@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#feeb0a</color>
+    <color name="colorPrimaryDark">#d4c401</color>
+    <color name="colorAccent">#4d961c</color>
+    <color name="background">#ffffff</color>
+
+    <color name="title">#000000</color>
+    <color name="text">#777777</color>
+    <color name="addressLocationItem">#646464</color>
+    <color name="addressSeparator">#e8e9e8</color>
+
+    <color name="productListTabUnselect">#a2a2a2</color>
+    <color name="productItemBorder">#ececec</color>
+
+    <color name="productDetailSeparator">#f0f0f0</color>
+</resources>

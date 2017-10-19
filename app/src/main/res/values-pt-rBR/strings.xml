@@ -1,0 +1,51 @@
+<resources>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+
+    <!--Google geo api key-->
+    <string name="google_geo_api_key">AIzaSyCch391WHftIFDyRGOzPqzoTV_HtQwAfpA</string>
+
+    <!--Splash-->
+    <string name="zx_ventures_description">Zx Ventures</string>
+
+    <!--Screen Titles-->
+    <string name="home_title">Buscar entrega pelo endereço</string>
+
+    <!--Home-->
+    <string name="address_fragment">Endereço</string>
+    <string name="address_title">Onde você está?</string>
+    <string name="address_info">Nós iremos utilizar seu endereço para encontrar o ponto de entrega mais próximo disponível.</string>
+    <string name="address_hint">Digite seu endereço</string>
+    <string name="home_button_close_description">Botão que apaga o campo de endereço e a lista de locais encontrados</string>
+    <string name="address_location_item_description">Icone de localização para o item encontrado</string>
+    <string name="category_all">Todos</string>
+
+    <!--ProductList-->
+    <string name="product_section_fragment">Categoria de Produto</string>
+    <string name="product_list_welcome_msg">"Olá "</string>
+    <string name="product_list_info">Tenho certeza que você encontrará um produto de sua preferência, não perca tempo, verifique as outras categorias.</string>
+    <string name="product_list_image_item_description">Image de um produto da lista de produtos</string>
+
+    <!--ProductDetail-->
+    <string name="product_detail_title">Detalhe do Produto</string>
+    <string name="product_detail_description">Descrição do produto</string>
+    <string name="description">Descrição</string>
+    <string name="product_detail_without_description">Este produto não tem descrição</string>
+
+    <!--Errors-->
+    <string name="no_internet_connection">Sem conexão com a internet</string>
+
+    <string name="address_connect_api_failed">Não foi possível conectar buscar seu endereço na Google!</string>
+    <string name="address_contacting_api_failed">Não foi possível buscar seu endereço!</string>
+    <string name="generic_error">Ocorreu um erro, favor entrar em contato conosco!</string>
+    <string name="product_list_empty_data">Desculpe, mas não foi possível encontrar nenhum produto!</string>
+    <string name="category_empty_data">Desculpe, mas não foi possível encontrar nenhuma categoria!</string>
+    <string name="home_empty_data">Desculpe, mas não foi possível encontrar nenhum estabelecimento próximo a você!</string>
+    <string name="problem_connection">Ocorreu algum problema com sua conexão</string>
+
+    <!--Info-->
+    <string name="category_all_id">0</string>
+    <string name="nearest">NEAREST</string>
+    <string name="available">Aberto</string>
+    <string name="closed">Fechado</string>
+</resources>

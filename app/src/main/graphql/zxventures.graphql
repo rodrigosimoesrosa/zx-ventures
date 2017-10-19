@@ -1,0 +1,37 @@
+query Categorys {
+  allCategory {
+    id
+    title
+  }
+}
+
+query pocCategorySearch($id: ID!, $search: String!, $categoryId: Int!) {
+  poc(id: $id) {
+    products(categoryId: $categoryId, search: $search) {
+      productVariants{
+        title
+        description
+        imageUrl
+        price
+      }
+    }
+  }
+}
+
+query pocSearchMethod($now: DateTime!, $algorithm: String!, $lat: String!, $lng: String!) {
+  pocSearch(now: $now, algorithm: $algorithm, lat: $lat, long: $lng) {
+    id
+    status
+    tradingName
+    officialName
+    address {
+      address1
+      address2
+      number
+      city
+      province
+      zip
+      coordinates
+    }
+  }
+}

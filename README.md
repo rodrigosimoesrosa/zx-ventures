@@ -1,6 +1,5 @@
 ## Requirements
 To run this project, you should have installed:
-
 - android studio
 
 ## Android
@@ -8,9 +7,13 @@ To run this project, you should have installed:
 ## How to run the tests?
 
 Basic Unit Test and Instrumented.
+HOME (basic)
+PRODUCT (basic)
 
 ./gradlew test
-./gradlew connectedAndroidTest
+
+To specific flavor
+./gradlew connectedProductionDebugAndroidTest
 
 I would like to implement more test, but unfortunately I couldn't
 
@@ -24,7 +27,7 @@ Was used to connect on api, this library is recommended by GraphQL
 
 https://github.com/apollographql/apollo-android
 
-## Expresso
+## Espresso
 Was used for instrumented test
 
 https://developer.android.com/training/testing/espresso/index.html
@@ -48,6 +51,3 @@ https://github.com/bumptech/glide
 This api was used to capture lat/lng for address which was writed by user.
 
 https://developers.google.com/places/android-api/
-
-
-

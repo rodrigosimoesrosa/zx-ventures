@@ -1,0 +1,48 @@
+{
+  "pocSearch": [{
+    "id": "37",
+    "status": "AVAILABLE",
+    "tradingName": "PIT STOP JOÃO DIAS",
+    "officialName": "Diego CEO 2",
+    "address": {
+      "address1": "Rua Alexandria",
+      "address2": "Point",
+      "number": "33",
+      "city": "Osasco",
+      "province": "SP",
+      "zip": "01415001",
+      "coordinates": "{\"type\":\"Point\",\"coordinates\":[-46.733113,-23.641724]}"
+    }
+  },
+    {
+      "id": "38",
+      "status": "AVAILABLE",
+      "tradingName": "EAB Representação Comercial",
+      "officialName": "Diego CEO 3",
+      "address": {
+        "address1": "Rua Alexandria",
+        "address2": "Point",
+        "number": "33",
+        "city": "Osasco",
+        "province": "SP",
+        "zip": "01415001",
+        "coordinates": "{\"type\":\"Point\",\"coordinates\":[-46.66771,-23.659362]}"
+      }
+    },
+    {
+      "id": "36",
+      "status": "AVAILABLE",
+      "tradingName": "Adega Magnislux - Pinheiros",
+      "officialName": "Diego CEO",
+      "address": {
+        "address1": "Rua Alexandria",
+        "address2": "Point",
+        "number": "33",
+        "city": "Osasco",
+        "province": "SP",
+        "zip": "01415001",
+        "coordinates": "{\"type\":\"Point\",\"coordinates\":[-46.689537,-23.560505]}"
+      }
+    }
+  ]
+}
